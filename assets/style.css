@@ -20,6 +20,11 @@ pre {
 pre,code {
   background:#eee;
 }
+@media screen (max-width:767px) {
+  body {
+    font-size:200%;
+  }
+}
 @media (prefers-color-scheme:dark) {
   body {
     color:#c9d1d9;
