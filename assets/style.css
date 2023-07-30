@@ -14,8 +14,10 @@ table,th,tr,td {
   border-collapse:collapse;
 }
 pre {
-  padding:10px;
   overflow:scroll;
+  padding:10px;
+}
+pre,code {
   background:#eee;
 }
 @media (prefers-color-scheme:dark) {
@@ -23,7 +25,7 @@ pre {
     color:#c9d1d9;
     background:#0d1117;
   }
-  pre {
+  pre,code {
     background:#000;
   }
   a:link {
