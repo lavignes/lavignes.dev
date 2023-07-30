@@ -1,8 +1,8 @@
 body {
-  max-width:1024px;
+  /*max-width:1024px;*/
   margin:40px auto;
   padding:0 10px;
-  font:18px/1.5 sans-serif;
+  font:18pt/1.5 sans-serif;
   color:#444
 }
 h1,h2,h3 {
@@ -20,9 +20,9 @@ pre {
 pre,code {
   background:#eee;
 }
-@media screen (max-width:767px) {
+@media only screen and (max-width:1024px) and (orientation:portrait) {
   body {
-    font-size:200%;
+    font-size:220%;
   }
 }
 @media (prefers-color-scheme:dark) {
