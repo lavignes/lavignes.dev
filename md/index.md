@@ -13,5 +13,5 @@ int main(int argc, char **argv) {
 |-------|-------|-------|
 |a      |b      |c      |
 
-[test](https://www.google.com)
+[test](subpage/)
 
