@@ -1,8 +1,10 @@
 # Helo
 
-This website is written in markdown. You can see the sources
-[right here](https://github.com/lavignes/lavignes.dev). The beauty of it all is the fact that
-my static site generator is [comrak](https://github.com/kivikakk/comrak) and a simple shell script:
+this website is written in markdown.
+
+you can see the sources [right here](https://github.com/lavignes/lavignes.dev).
+
+the beauty of it all is the fact that my static site generator is [comrak](https://github.com/kivikakk/comrak) and a simple shell script:
 
 ```sh
 #!/bin/sh
