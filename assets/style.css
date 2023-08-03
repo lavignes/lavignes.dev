@@ -22,7 +22,7 @@ pre,code {
 }
 @media only screen and (max-width:1024px) and (orientation:portrait) {
   body {
-    font-size:150%;
+    font-size:220%;
   }
 }
 @media (prefers-color-scheme:dark) {
