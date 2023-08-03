@@ -2,7 +2,7 @@ body {
   max-width:1024px;
   margin:40px auto;
   padding:0 10px;
-  font:18pt/1.5 sans-serif;
+  font:18px/1.5 sans-serif;
   color:#444
 }
 h1,h2,h3 {
@@ -22,7 +22,7 @@ pre,code {
 }
 @media only screen and (max-width:1024px) and (orientation:portrait) {
   body {
-    font-size:220%;
+    font-size:150%;
   }
 }
 @media (prefers-color-scheme:dark) {
