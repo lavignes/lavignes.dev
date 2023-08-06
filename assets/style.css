@@ -3,7 +3,7 @@ body {
   margin:40px auto;
   padding:0 10px;
   font:18px/1.5 sans-serif;
-  color:#444
+  color:#333
 }
 h1,h2,h3 {
   line-height:1.2;
@@ -18,7 +18,8 @@ pre {
   padding:10px;
 }
 pre,code {
-  background:#eee;
+  color:#000;
+  background:#cff;
 }
 @media only screen and (max-width:1024px) and (orientation:portrait) {
   body {
@@ -27,17 +28,17 @@ pre,code {
 }
 @media (prefers-color-scheme:dark) {
   body {
-    color:#c9d1d9;
-    background:#0d1117;
-  }
-  pre,code {
+    color:#ccc;
     background:#000;
   }
+  pre,code {
+    color:#fff;
+    background:#033;
+  }
   a:link {
-    color:#58a6ff;
+    color:#69f;
   }
   a:visited {
-    color:#8e96f0;
+    color:#99f;
   }
 }
-
