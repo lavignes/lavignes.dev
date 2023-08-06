@@ -1,31 +1,11 @@
-# Helo
+# Welcome to my webzone
 
-this website is written in markdown.
+This is my super-minimalist low-effort website. You can see the sources [right here](https://github.com/lavignes/lavignes.dev).
 
-you can see the sources [right here](https://github.com/lavignes/lavignes.dev).
+## Code
 
-the beauty of it all is the fact that my static site generator is [comrak](https://github.com/kivikakk/comrak) and a simple shell script:
+Programming for fun is my main hobby. Here I discuss my favorite projects and talk about their
+design and development.
 
-```sh
-#!/bin/sh
+* [Possum2 - a 65ce02-based computer system](/possum2)
 
-set -e
-
-MD="comrak -e strikethrough,table,superscript,footnotes --unsafe --syntax-highlighting none"
-DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
-
-find "$DIR" -name "*.md" -not -name "_*.md" | while read -r fname; do
-  fdir="$(dirname "$fname")"
-  odir="$DIR/..${fdir#"$DIR"}"
-  ofname="$odir/$(basename "$fname" md)html"
-  printf "transforming %s => %s ... " "$fname" "$ofname"
-  mkdir -p "$odir"
-  title=$(head -n 1 "$fname" | sed -e "s/^\\W*#*\\W*//")
-  eval "$MD $DIR/_head.md" > "$ofname"
-  echo "<title>$title</title>" >> "$ofname"
-  eval "$MD $DIR/_prebody.md" >> "$ofname"
-  eval "$MD $fname" >> "$ofname"
-  eval "$MD $DIR/_tail.md" >> "$ofname"
-  echo "ok"
-done
-```

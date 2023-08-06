@@ -2,38 +2,20 @@
 <html>
 <head>
 <link rel="stylesheet" href="/assets/style.css">
-<title>Helo</title>
+<title>Welcome to my webzone</title>
 </head>
 <body>
 <header>
-<p>[<a href="/">lavignes.dev</a>] | [<a href="/code">code</a>]</p>
+<p>[<a href="/">lavignes.dev</a>] | [<a href="/possum2">possum2</a>]</p>
 </header>
-<h1>Helo</h1>
-<p>this website is written in markdown.</p>
-<p>you can see the sources <a href="https://github.com/lavignes/lavignes.dev">right here</a>.</p>
-<p>the beauty of it all is the fact that my static site generator is <a href="https://github.com/kivikakk/comrak">comrak</a> and a simple shell script:</p>
-<pre><code class="language-sh">#!/bin/sh
-
-set -e
-
-MD=&quot;comrak -e strikethrough,table,superscript,footnotes --unsafe --syntax-highlighting none&quot;
-DIR=&quot;$(cd -P -- &quot;$(dirname -- &quot;$0&quot;)&quot; &amp;&amp; pwd -P)&quot;
-
-find &quot;$DIR&quot; -name &quot;*.md&quot; -not -name &quot;_*.md&quot; | while read -r fname; do
-  fdir=&quot;$(dirname &quot;$fname&quot;)&quot;
-  odir=&quot;$DIR/..${fdir#&quot;$DIR&quot;}&quot;
-  ofname=&quot;$odir/$(basename &quot;$fname&quot; md)html&quot;
-  printf &quot;transforming %s =&gt; %s ... &quot; &quot;$fname&quot; &quot;$ofname&quot;
-  mkdir -p &quot;$odir&quot;
-  title=$(head -n 1 &quot;$fname&quot; | sed -e &quot;s/^\\W*#*\\W*//&quot;)
-  eval &quot;$MD $DIR/_head.md&quot; &gt; &quot;$ofname&quot;
-  echo &quot;&lt;title&gt;$title&lt;/title&gt;&quot; &gt;&gt; &quot;$ofname&quot;
-  eval &quot;$MD $DIR/_prebody.md&quot; &gt;&gt; &quot;$ofname&quot;
-  eval &quot;$MD $fname&quot; &gt;&gt; &quot;$ofname&quot;
-  eval &quot;$MD $DIR/_tail.md&quot; &gt;&gt; &quot;$ofname&quot;
-  echo &quot;ok&quot;
-done
-</code></pre>
+<h1>Welcome to my webzone</h1>
+<p>This is my super-minimalist low-effort website. You can see the sources <a href="https://github.com/lavignes/lavignes.dev">right here</a>.</p>
+<h2>Code</h2>
+<p>Programming for fun is my main hobby. Here I discuss my favorite projects and talk about their
+design and development.</p>
+<ul>
+<li><a href="/possum2">Possum2 - a 65ce02-based computer system</a></li>
+</ul>
 <iframe src="https://john.citrons.xyz/embed?ref=www.lavignes.dev" style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;"></iframe>
 </body>
 </html>

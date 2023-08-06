@@ -3,6 +3,7 @@
 
 <header>
 
-[[lavignes.dev](/)] | [[code](/code)]
+[[lavignes.dev](/)] | [[possum2](/possum2)]
+
 
 </header>
