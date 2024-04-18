@@ -19,7 +19,46 @@ pre {
 }
 pre,code {
   color:#000;
-  background:#cff;
+  background:#eee;
+  border-radius:6px;
+}
+.note,.warn,.important {
+  background:#eee;
+  margin:12px;
+  padding:10px;
+}
+.note pre,.note code {
+  background:#fff;
+}
+.warn pre,.warn code {
+  background:#fff;
+}
+.important pre,.important code {
+  background:#fff;
+}
+.note::before {
+  color:#fff;
+  background:#06a;
+  content:'NOTE';
+  padding:0px 8px;
+  border-radius:6px;
+  margin:-20px;
+}
+.warn::before {
+  color:#fff;
+  background:#d60;
+  content:'WARNING';
+  padding:0px 8px;
+  border-radius:6px;
+  margin:-20px;
+}
+.important::before {
+  color:#fff;
+  background:#d00;
+  content:'IMPORTANT';
+  padding:0px 8px;
+  border-radius:6px;
+  margin:-20px;
 }
 @media only screen and (max-width:1024px) and (orientation:portrait) {
   body {
@@ -33,7 +72,19 @@ pre,code {
   }
   pre,code {
     color:#fff;
-    background:#033;
+    background:#222;
+  }
+  .note,.warn,.important {
+    background:#222;
+  }
+  .note pre,.note code {
+    background:#000;
+  }
+  .warn pre,.warn code {
+    background:#000;
+  }
+  .important pre,.important code {
+    background:#000;
   }
   a:link {
     color:#69f;
