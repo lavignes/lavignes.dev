@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/assets/style.css">
+<title>Binary</title>
+</head>
+<body>
+
+<header>
+<p>[<a href="/">lavignes.dev</a>]</p>
+</header>
+<section id="Binary">
+<h1>Binary</h1>
+<p>A computer needs a way to store information, and there are lots of ways to store information.
+Early computing machines would for example rotate a gear a certain number of teeth to store a
+number.
+Think of a mechanical clock for example, the information about the current time is stored quite
+effectively using the angle of gears.
+If we take just the second hand, we can store 60 unique positions or 60 different <em>states</em> the
+second hand can be in. Combine with 60 positions of the minute hand and 12 of the hour hand, the
+total number of states a clock can represent is <code>60 * 60 * 12</code> or 43200. Hopefully this makes sense
+as the number of seconds in 12 hours is 43200.</p>
+<p>Other machines would store information using varying voltages of electricity. AM Radio still
+transmits and interprets sound information using varying levels of voltage (the difference between
+the number of electrons on one side of a electric circuit vs another).
+It was discovered early on in the history of electro-mechanical computers that it was much more
+practical to build machines that store information using electrical current (the rate of electrons
+flowing through a wire).
+More specifically, folks understood that we really only need a way to check if electrons are
+flowing (a circuit is <em>ON</em>) as opposed to no electrons flowing (a circuit is <em>OFF</em>).</p>
+<p>So given just two states, OFF and ON, how can we scale this up to store more information like we
+can by adding teeth to a gear? Well, we already do this with a clock. We can add more states by
+adding more gears. In a computer we add more wires.</p>
+<div class="note">
+<p>Nothing says that the state of these wires <em>have</em> to represent numbers.
+A single wire could represent OFF and ON, 0 or 1, weekday or weekend, and 111 or 912.
+Its completely arbitrary.
+We just all have to agree on what it means in context of what we’re using the information for.
+The Romans for example used letters to represent numbers <em>or</em> words depending on the context.</p>
+</div>
+<p>If we start with one wire we can store 2 states. If we add another wire we can use the math that
+we used in the clock example above, just multiply the number of states. <code>2 * 2</code> is four states.
+Keep adding more and more wires and we can store anything. You can represent this more easily
+using <em>exponential notation</em> where <code>2 * 2</code> is written as 2<sup>2</sup>, and read as
+“two to the <em>second power</em>”. Add another wire again and we have 2<sup>3</sup> or 8 states.</p>
+<p>Let’s pause here and look at our own system of writing numbers.
+We have the <em>digits</em> 0 through 9 and each digit has 10 possible states.
+We call this written system a <em>base 10</em> or <em>decimal</em> number system.
+To represent more states (more numbers) we either need more unique digits or start repeating them
+like we do with the gears of a clock or wires in our examples above.
+We can use the same math above and compute the possible representable states given any number of
+digits.
+For example, 10<sup>2</sup> is 100 or in other words, the number of unique states you can represent with two
+decimal digits is 100. If you start at zero and look at all numbers up to and including 99 you’ll
+have seen 100 different numbers.</p>
+</section>
+</body>
+</html>

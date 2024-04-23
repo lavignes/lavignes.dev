@@ -1,0 +1,26 @@
+# SmolPC
+
+SmolPC is essentially a rigorous computer science education distilled into a *single*
+programming project. Together we'll go from next to no programming knowledge to building our
+own programming language and operating system!
+
+## Section 0: Tools
+
+## Section 1: Computer Theory
+
+* [Binary](./1_binary.html)
+* [The Abstract Machine](./1_the_abstract_machine.html)
+
+## Section 2: RISC-V Emulator
+
+## Section 3: RISC-V Assembler
+
+## Section 4: SmolPC Hardware
+
+## Section 5: SmolOS
+
+## Section 6: Bootstrapping
+
+## Section 7: Compiler
+
+## Section 8: Recreational Programming
